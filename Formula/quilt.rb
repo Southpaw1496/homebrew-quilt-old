@@ -13,7 +13,7 @@ class Quilt < Formula
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     system "cargo", "install", *std_cargo_args
-	 mv "#{bin}/quilt-installer", "#{bin}/quilt"
+	mv "#{bin}/quilt-installer", "#{bin}/quilt"
   end
 
   test do
