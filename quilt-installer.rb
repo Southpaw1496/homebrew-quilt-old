@@ -5,7 +5,7 @@ class QuiltInstaller < Formula
   sha256 "42d80580dc11e3a883b06633450f8121de704cb0ba24ac56d067f898473eddaa"
   license "Apache-2.0"
 
-   depends_on "openssl@1.1"
+  depends_on "openssl@1.1"
 #   depends_on "pkg-config" => :build
   depends_on "rust" => :build
 
