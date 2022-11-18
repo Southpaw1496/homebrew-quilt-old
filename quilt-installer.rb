@@ -6,6 +6,7 @@ class QuiltInstaller < Formula
   license "Apache-2.0"
 
   depends_on "openssl@1.1" => :build
+  depends_on "pkg-config" => :build
   depends_on "rust" => :build
 
   def install
