@@ -6,6 +6,12 @@ class Croc < Formula
   license "MIT"
   # head "https://github.com/schollz/croc.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/Southpaw1496/homebrew-quilt/releases/download/croc-9.6.1"
+    sha256 cellar: :any_skip_relocation, monterey:     "455545a0c40532bcdc715d0ed0d621476ce2bdba05774957e28d152f5fc8c6d5"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "60803458c5ff82218cf4b34954b2fb9d6547e7d0797b088809dc6fd2cfe79456"
+  end
+
   depends_on "go" => :build
 
   def install
